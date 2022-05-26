@@ -81,7 +81,7 @@ const inputClosePin = document.querySelector('.form__input--pin');
 /////////////////////////////////////////////////
 // Functions
 
-// Now, where is the date actually coming from? Well, as we already know, it is in the accounts.movementDates, right? And so here, we are looping over the movements. And so at the same time, basically we also need to loop over the movement dates,  we already have the index here. And so what we can do is to write  acc.movementsDates and then we take it at position i. So that is the current index in the movements array. And the same index is then gonna point to the equivalent date in this movements date array. So we called it for each method on one of them. So that's the movements. And then we use the current index to also get the data from some other array. we later on call this function in the displaymovement function.
+// so here, we are looping over the movements. And so at the same time, basically we also need to loop over the movement dates,  we already have the index here. And so what we can do is to write  acc.movementsDates and then we take it at position i. So that is the current index in the movements array. And the same index is then gonna point to the equivalent date in this movements date array. So we called it for each method on one of them. So that's the movements. And then we use the current index to also get the data from some other array. we later on call this function in the displaymovement function.
 
 function formatMovementDate(date, locale) {
 	// so in this function here we create the functionality for converting timestamps to days. because when we add or substract or do any form of operation for time it returns its timestamp and then so convert that to days we use the formula.
